@@ -13,6 +13,8 @@
 		0D117D5A1F29CF52005649BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D117D581F29CF52005649BB /* Main.storyboard */; };
 		0D117D5C1F29CF52005649BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D117D5B1F29CF52005649BB /* Assets.xcassets */; };
 		0D117D5F1F29CF52005649BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D117D5D1F29CF52005649BB /* LaunchScreen.storyboard */; };
+		0D117D681F29E0AC005649BB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D117D671F29E0AC005649BB /* TestViewController.m */; };
+		1C9F30C6825E7035B49AC99A /* Pods_IQKeyBoard__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78CACF332CE2E72704D3CF9 /* Pods_IQKeyBoard__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		0D117D5B1F29CF52005649BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D117D5E1F29CF52005649BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D117D601F29CF52005649BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D117D661F29E0AC005649BB /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		0D117D671F29E0AC005649BB /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		155D3B0F7617021AAB749AC1 /* Pods-IQKeyBoard使用.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyBoard使用.release.xcconfig"; path = "Pods/Target Support Files/Pods-IQKeyBoard使用/Pods-IQKeyBoard使用.release.xcconfig"; sourceTree = "<group>"; };
+		4A22978D953D5F561D07EBA9 /* Pods-IQKeyBoard使用.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyBoard使用.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IQKeyBoard使用/Pods-IQKeyBoard使用.debug.xcconfig"; sourceTree = "<group>"; };
+		D78CACF332CE2E72704D3CF9 /* Pods_IQKeyBoard__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IQKeyBoard__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9F30C6825E7035B49AC99A /* Pods_IQKeyBoard__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				0D117D4E1F29CF52005649BB /* IQKeyBoard使用 */,
 				0D117D4D1F29CF52005649BB /* Products */,
+				BF3FBB3ABDFC65D9EA457005 /* Pods */,
+				0F4C03F96E72A954B1DFF3C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +72,8 @@
 				0D117D531F29CF52005649BB /* AppDelegate.m */,
 				0D117D551F29CF52005649BB /* ViewController.h */,
 				0D117D561F29CF52005649BB /* ViewController.m */,
+				0D117D661F29E0AC005649BB /* TestViewController.h */,
+				0D117D671F29E0AC005649BB /* TestViewController.m */,
 				0D117D581F29CF52005649BB /* Main.storyboard */,
 				0D117D5B1F29CF52005649BB /* Assets.xcassets */,
 				0D117D5D1F29CF52005649BB /* LaunchScreen.storyboard */,
@@ -79,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F4C03F96E72A954B1DFF3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78CACF332CE2E72704D3CF9 /* Pods_IQKeyBoard__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3FBB3ABDFC65D9EA457005 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A22978D953D5F561D07EBA9 /* Pods-IQKeyBoard使用.debug.xcconfig */,
+				155D3B0F7617021AAB749AC1 /* Pods-IQKeyBoard使用.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D117D631F29CF52005649BB /* Build configuration list for PBXNativeTarget "IQKeyBoard使用" */;
 			buildPhases = (
+				97CFFC65E2A8698E5F3B4CE7 /* [CP] Check Pods Manifest.lock */,
 				0D117D481F29CF52005649BB /* Sources */,
 				0D117D491F29CF52005649BB /* Frameworks */,
 				0D117D4A1F29CF52005649BB /* Resources */,
+				5A833CB95CDDE1D06D7C87AA /* [CP] Embed Pods Frameworks */,
+				58892926907AD36A90FABA25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +142,7 @@
 				TargetAttributes = {
 					0D117D4B1F29CF52005649BB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X224928686;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +178,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58892926907AD36A90FABA25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQKeyBoard使用/Pods-IQKeyBoard使用-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A833CB95CDDE1D06D7C87AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IQKeyBoard使用/Pods-IQKeyBoard使用-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQKeyBoard使用/Pods-IQKeyBoard使用-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CFFC65E2A8698E5F3B4CE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IQKeyBoard使用-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D117D481F29CF52005649BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +241,7 @@
 			files = (
 				0D117D571F29CF52005649BB /* ViewController.m in Sources */,
 				0D117D541F29CF52005649BB /* AppDelegate.m in Sources */,
+				0D117D681F29E0AC005649BB /* TestViewController.m in Sources */,
 				0D117D511F29CF52005649BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +360,12 @@
 		};
 		0D117D641F29CF52005649BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A22978D953D5F561D07EBA9 /* Pods-IQKeyBoard使用.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X224928686;
 				INFOPLIST_FILE = "IQKeyBoard使用/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hzc.IQKeyBoard--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,9 +374,12 @@
 		};
 		0D117D651F29CF52005649BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155D3B0F7617021AAB749AC1 /* Pods-IQKeyBoard使用.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X224928686;
 				INFOPLIST_FILE = "IQKeyBoard使用/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hzc.IQKeyBoard--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +405,7 @@
 				0D117D651F29CF52005649BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
